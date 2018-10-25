@@ -1,0 +1,899 @@
+*Written by i_SWAT 2016-03-10 12:26:41
+subbasin       1     1     1                          1
+          000000001.sub
+subbasin       1     2     2                          2
+          000000002.sub
+subbasin       1     3     3                          3
+          000000003.sub
+subbasin       1     4     4                          4
+          000000004.sub
+subbasin       1     5     5                          5
+          000000005.sub
+subbasin       1     6     6                          6
+          000000006.sub
+subbasin       1     7     7                          7
+          000000007.sub
+subbasin       1     8     8                          8
+          000000008.sub
+subbasin       1     9     9                          9
+          000000009.sub
+subbasin       1    10    10                         10
+          000000010.sub
+subbasin       1    11    11                         11
+          000000011.sub
+subbasin       1    12    12                         12
+          000000012.sub
+subbasin       1    13    13                         13
+          000000013.sub
+subbasin       1    14    14                         14
+          000000014.sub
+subbasin       1    15    15                         15
+          000000015.sub
+subbasin       1    16    16                         16
+          000000016.sub
+subbasin       1    17    17                         17
+          000000017.sub
+subbasin       1    18    18                         18
+          000000018.sub
+subbasin       1    19    19                         19
+          000000019.sub
+subbasin       1    20    20                         20
+          000000020.sub
+subbasin       1    21    21                         21
+          000000021.sub
+subbasin       1    22    22                         22
+          000000022.sub
+subbasin       1    23    23                         23
+          000000023.sub
+subbasin       1    24    24                         24
+          000000024.sub
+subbasin       1    25    25                         25
+          000000025.sub
+subbasin       1    26    26                         26
+          000000026.sub
+subbasin       1    27    27                         27
+          000000027.sub
+subbasin       1    28    28                         28
+          000000028.sub
+subbasin       1    29    29                         29
+          000000029.sub
+subbasin       1    30    30                         30
+          000000030.sub
+subbasin       1    31    31                         31
+          000000031.sub
+subbasin       1    32    32                         32
+          000000032.sub
+subbasin       1    33    33                         33
+          000000033.sub
+subbasin       1    34    34                         34
+          000000034.sub
+subbasin       1    35    35                         35
+          000000035.sub
+subbasin       1    36    36                         36
+          000000036.sub
+subbasin       1    37    37                         37
+          000000037.sub
+subbasin       1    38    38                         38
+          000000038.sub
+subbasin       1    39    39                         39
+          000000039.sub
+subbasin       1    40    40                         40
+          000000040.sub
+subbasin       1    41    41                         41
+          000000041.sub
+subbasin       1    42    42                         42
+          000000042.sub
+subbasin       1    43    43                         43
+          000000043.sub
+subbasin       1    44    44                         44
+          000000044.sub
+subbasin       1    45    45                         45
+          000000045.sub
+subbasin       1    46    46                         46
+          000000046.sub
+subbasin       1    47    47                         47
+          000000047.sub
+subbasin       1    48    48                         48
+          000000048.sub
+subbasin       1    49    49                         49
+          000000049.sub
+subbasin       1    50    50                         50
+          000000050.sub
+subbasin       1    51    51                         51
+          000000051.sub
+subbasin       1    52    52                         52
+          000000052.sub
+subbasin       1    53    53                         53
+          000000053.sub
+subbasin       1    54    54                         54
+          000000054.sub
+subbasin       1    55    55                         55
+          000000055.sub
+subbasin       1    56    56                         56
+          000000056.sub
+subbasin       1    57    57                         57
+          000000057.sub
+subbasin       1    58    58                         58
+          000000058.sub
+subbasin       1    59    59                         59
+          000000059.sub
+subbasin       1    60    60                         60
+          000000060.sub
+subbasin       1    61    61                         61
+          000000061.sub
+subbasin       1    62    62                         62
+          000000062.sub
+subbasin       1    63    63                         63
+          000000063.sub
+subbasin       1    64    64                         64
+          000000064.sub
+subbasin       1    65    65                         65
+          000000065.sub
+subbasin       1    66    66                         66
+          000000066.sub
+subbasin       1    67    67                         67
+          000000067.sub
+subbasin       1    68    68                         68
+          000000068.sub
+subbasin       1    69    69                         69
+          000000069.sub
+subbasin       1    70    70                         70
+          000000070.sub
+subbasin       1    71    71                         71
+          000000071.sub
+subbasin       1    72    72                         72
+          000000072.sub
+subbasin       1    73    73                         73
+          000000073.sub
+subbasin       1    74    74                         74
+          000000074.sub
+subbasin       1    75    75                         75
+          000000075.sub
+subbasin       1    76    76                         76
+          000000076.sub
+subbasin       1    77    77                         77
+          000000077.sub
+subbasin       1    78    78                         78
+          000000078.sub
+subbasin       1    79    79                         79
+          000000079.sub
+subbasin       1    80    80                         80
+          000000080.sub
+subbasin       1    81    81                         81
+          000000081.sub
+subbasin       1    82    82                         82
+          000000082.sub
+subbasin       1    83    83                         83
+          000000083.sub
+subbasin       1    84    84                         84
+          000000084.sub
+subbasin       1    85    85                         85
+          000000085.sub
+subbasin       1    86    86                         86
+          000000086.sub
+subbasin       1    87    87                         87
+          000000087.sub
+subbasin       1    88    88                         88
+          000000088.sub
+subbasin       1    89    89                         89
+          000000089.sub
+subbasin       1    90    90                         90
+          000000090.sub
+subbasin       1    91    91                         91
+          000000091.sub
+subbasin       1    92    92                         92
+          000000092.sub
+subbasin       1    93    93                         93
+          000000093.sub
+subbasin       1    94    94                         94
+          000000094.sub
+subbasin       1    95    95                         95
+          000000095.sub
+subbasin       1    96    96                         96
+          000000096.sub
+subbasin       1    97    97                         97
+          000000097.sub
+subbasin       1    98    98                         98
+          000000098.sub
+subbasin       1    99    99                         99
+          000000099.sub
+subbasin       1   100   100                        100
+          000000100.sub
+subbasin       1   101   101                        101
+          000000101.sub
+subbasin       1   102   102                        102
+          000000102.sub
+subbasin       1   103   103                        103
+          000000103.sub
+subbasin       1   104   104                        104
+          000000104.sub
+subbasin       1   105   105                        105
+          000000105.sub
+subbasin       1   106   106                        106
+          000000106.sub
+subbasin       1   107   107                        107
+          000000107.sub
+subbasin       1   108   108                        108
+          000000108.sub
+subbasin       1   109   109                        109
+          000000109.sub
+subbasin       1   110   110                        110
+          000000110.sub
+subbasin       1   111   111                        111
+          000000111.sub
+subbasin       1   112   112                        112
+          000000112.sub
+route          2   113     1     1       0.000
+          000000001.rte000000001.swq
+recmon         7   114     1            0
+          1p.dat
+add            5   115   113   114
+add            5   116     7   115
+route          2   117     3     3       0.000
+          000000003.rte000000003.swq
+recmon         7   118     2            0
+          3p.dat
+add            5   119   117   118
+add            5   120   116   119
+route          2   121     4     4       0.000
+          000000004.rte000000004.swq
+recmon         7   122     3            0
+          4p.dat
+add            5   123   121   122
+add            5   124    13   123
+route          2   125     5     5       0.000
+          000000005.rte000000005.swq
+recmon         7   126     4            0
+          5p.dat
+add            5   127   125   126
+add            5   128   124   127
+route          2   129     6     6       0.000
+          000000006.rte000000006.swq
+recmon         7   130     5            0
+          6p.dat
+add            5   131   129   130
+add            5   132    11   131
+route          2   133     8     8       0.000
+          000000008.rte000000008.swq
+recmon         7   134     6            0
+          8p.dat
+add            5   135   133   134
+add            5   136    10   135
+route          2   137     9     9       0.000
+          000000009.rte000000009.swq
+recmon         7   138     7            0
+          9p.dat
+add            5   139   137   138
+add            5   140   136   139
+route          2   141    10   140       0.000
+          000000010.rte000000010.swq
+recmon         7   142     8            0
+          10p.dat
+add            5   143   141   142
+add            5   144   128   143
+route          2   145    13   144       0.000
+          000000013.rte000000013.swq
+recmon         7   146     9            0
+          13p.dat
+add            5   147   145   146
+add            5   148    17   147
+route          2   149    12    12       0.000
+          000000012.rte000000012.swq
+recmon         7   150    10            0
+          12p.dat
+add            5   151   149   150
+add            5   152    22   151
+route          2   153    14    14       0.000
+          000000014.rte000000014.swq
+recmon         7   154    11            0
+          14p.dat
+add            5   155   153   154
+add            5   156   148   155
+route          2   157    17   156       0.000
+          000000017.rte000000017.swq
+recmon         7   158    12            0
+          17p.dat
+add            5   159   157   158
+add            5   160    23   159
+route          2   161    15    15       0.000
+          000000015.rte000000015.swq
+recmon         7   162    13            0
+          15p.dat
+add            5   163   161   162
+add            5   164   152   163
+route          2   165    16    16       0.000
+          000000016.rte000000016.swq
+recmon         7   166    14            0
+          16p.dat
+add            5   167   165   166
+add            5   168   160   167
+route          2   169    18    18       0.000
+          000000018.rte000000018.swq
+recmon         7   170    15            0
+          18p.dat
+add            5   171   169   170
+add            5   172   168   171
+route          2   173    23   172       0.000
+          000000023.rte000000023.swq
+recmon         7   174    16            0
+          23p.dat
+add            5   175   173   174
+add            5   176    87   175
+route          2   177    19    19       0.000
+          000000019.rte000000019.swq
+recmon         7   178    17            0
+          19p.dat
+add            5   179   177   178
+add            5   180    24   179
+route          2   181    20    20       0.000
+          000000020.rte000000020.swq
+recmon         7   182    18            0
+          20p.dat
+add            5   183   181   182
+add            5   184   180   183
+route          2   185    24   184       0.000
+          000000024.rte000000024.swq
+recmon         7   186    19            0
+          24p.dat
+add            5   187   185   186
+add            5   188    33   187
+route          2   189    25    25       0.000
+          000000025.rte000000025.swq
+recmon         7   190    20            0
+          25p.dat
+add            5   191   189   190
+add            5   192   188   191
+route          2   193    33   192       0.000
+          000000033.rte000000033.swq
+recmon         7   194    21            0
+          33p.dat
+add            5   195   193   194
+add            5   196    39   195
+route          2   197    26    26       0.000
+          000000026.rte000000026.swq
+recmon         7   198    22            0
+          26p.dat
+add            5   199   197   198
+add            5   200    31   199
+route          2   201    31   200       0.000
+          000000031.rte000000031.swq
+recmon         7   202    23            0
+          31p.dat
+add            5   203   201   202
+add            5   204    41   203
+route          2   205    30    30       0.000
+          000000030.rte000000030.swq
+recmon         7   206    24            0
+          30p.dat
+add            5   207   205   206
+add            5   208   204   207
+route          2   209    41   208       0.000
+          000000041.rte000000041.swq
+recmon         7   210    25            0
+          41p.dat
+add            5   211   209   210
+add            5   212    52   211
+route          2   213    34    34       0.000
+          000000034.rte000000034.swq
+recmon         7   214    26            0
+          34p.dat
+add            5   215   213   214
+add            5   216   196   215
+route          2   217    36    36       0.000
+          000000036.rte000000036.swq
+recmon         7   218    27            0
+          36p.dat
+add            5   219   217   218
+add            5   220    49   219
+route          2   221    37    37       0.000
+          000000037.rte000000037.swq
+recmon         7   222    28            0
+          37p.dat
+add            5   223   221   222
+add            5   224   220   223
+route          2   225    49   224       0.000
+          000000049.rte000000049.swq
+recmon         7   226    29            0
+          49p.dat
+add            5   227   225   226
+add            5   228    55   227
+route          2   229    38    38       0.000
+          000000038.rte000000038.swq
+recmon         7   230    30            0
+          38p.dat
+add            5   231   229   230
+add            5   232    42   231
+route          2   233    44    44       0.000
+          000000044.rte000000044.swq
+recmon         7   234    31            0
+          44p.dat
+add            5   235   233   234
+add            5   236    40   235
+route          2   237    46    46       0.000
+          000000046.rte000000046.swq
+recmon         7   238    32            0
+          46p.dat
+add            5   239   237   238
+add            5   240    96   239
+route          2   241    48    48       0.000
+          000000048.rte000000048.swq
+recmon         7   242    33            0
+          48p.dat
+add            5   243   241   242
+add            5   244    54   243
+route          2   245    51    51       0.000
+          000000051.rte000000051.swq
+recmon         7   246    34            0
+          51p.dat
+add            5   247   245   246
+add            5   248   112   247
+route          2   249    57    57       0.000
+          000000057.rte000000057.swq
+recmon         7   250    35            0
+          57p.dat
+add            5   251   249   250
+add            5   252    60   251
+route          2   253    63    63       0.000
+          000000063.rte000000063.swq
+recmon         7   254    36            0
+          63p.dat
+add            5   255   253   254
+add            5   256   109   255
+route          2   257    64    64       0.000
+          000000064.rte000000064.swq
+recmon         7   258    37            0
+          64p.dat
+add            5   259   257   258
+add            5   260    71   259
+route          2   261    65    65       0.000
+          000000065.rte000000065.swq
+recmon         7   262    38            0
+          65p.dat
+add            5   263   261   262
+add            5   264   260   263
+route          2   265    66    66       0.000
+          000000066.rte000000066.swq
+recmon         7   266    39            0
+          66p.dat
+add            5   267   265   266
+add            5   268    75   267
+route          2   269    67    67       0.000
+          000000067.rte000000067.swq
+recmon         7   270    40            0
+          67p.dat
+add            5   271   269   270
+add            5   272   264   271
+route          2   273    71   272       0.000
+          000000071.rte000000071.swq
+recmon         7   274    41            0
+          71p.dat
+add            5   275   273   274
+add            5   276    74   275
+route          2   277    68    68       0.000
+          000000068.rte000000068.swq
+recmon         7   278    42            0
+          68p.dat
+add            5   279   277   278
+add            5   280    78   279
+route          2   281    69    69       0.000
+          000000069.rte000000069.swq
+recmon         7   282    43            0
+          69p.dat
+add            5   283   281   282
+add            5   284   280   283
+route          2   285    78   284       0.000
+          000000078.rte000000078.swq
+recmon         7   286    44            0
+          78p.dat
+add            5   287   285   286
+add            5   288    82   287
+route          2   289    73    73       0.000
+          000000073.rte000000073.swq
+recmon         7   290    45            0
+          73p.dat
+add            5   291   289   290
+add            5   292   106   291
+route          2   293    80    80       0.000
+          000000080.rte000000080.swq
+recmon         7   294    46            0
+          80p.dat
+add            5   295   293   294
+add            5   296    79   295
+route          2   297    83    83       0.000
+          000000083.rte000000083.swq
+recmon         7   298    47            0
+          83p.dat
+add            5   299   297   298
+add            5   300   288   299
+route          2   301    84    84       0.000
+          000000084.rte000000084.swq
+recmon         7   302    48            0
+          84p.dat
+add            5   303   301   302
+add            5   304   111   303
+route          2   305    86    86       0.000
+          000000086.rte000000086.swq
+recmon         7   306    49            0
+          86p.dat
+add            5   307   305   306
+add            5   308     2   307
+route          2   309     2   308       0.000
+          000000002.rte000000002.swq
+recmon         7   310    50            0
+          2p.dat
+add            5   311   309   310
+add            5   312   120   311
+route          2   313     7   312       0.000
+          000000007.rte000000007.swq
+recmon         7   314    51            0
+          7p.dat
+add            5   315   313   314
+add            5   316   132   315
+route          2   317    11   316       0.000
+          000000011.rte000000011.swq
+recmon         7   318    52            0
+          11p.dat
+add            5   319   317   318
+add            5   320   164   319
+route          2   321    22   320       0.000
+          000000022.rte000000022.swq
+recmon         7   322    53            0
+          22p.dat
+add            5   323   321   322
+add            5   324   176   323
+route          2   325    87   324       0.000
+          000000087.rte000000087.swq
+recmon         7   326    54            0
+          87p.dat
+add            5   327   325   326
+add            5   328    27   327
+route          2   329    27   328       0.000
+          000000027.rte000000027.swq
+recmon         7   330    55            0
+          27p.dat
+add            5   331   329   330
+add            5   332    32   331
+route          2   333    88    88       0.000
+          000000088.rte000000088.swq
+recmon         7   334    56            0
+          88p.dat
+add            5   335   333   334
+add            5   336    21   335
+route          2   337    21   336       0.000
+          000000021.rte000000021.swq
+recmon         7   338    57            0
+          21p.dat
+add            5   339   337   338
+add            5   340    89   339
+route          2   341    89   340       0.000
+          000000089.rte000000089.swq
+recmon         7   342    58            0
+          89p.dat
+add            5   343   341   342
+add            5   344    91   343
+route          2   345    91   344       0.000
+          000000091.rte000000091.swq
+recmon         7   346    59            0
+          91p.dat
+add            5   347   345   346
+add            5   348    35   347
+route          2   349    35   348       0.000
+          000000035.rte000000035.swq
+recmon         7   350    60            0
+          35p.dat
+add            5   351   349   350
+add            5   352   216   351
+route          2   353    90    90       0.000
+          000000090.rte000000090.swq
+recmon         7   354    61            0
+          90p.dat
+add            5   355   353   354
+add            5   356    43   355
+route          2   357    43   356       0.000
+          000000043.rte000000043.swq
+recmon         7   358    62            0
+          43p.dat
+add            5   359   357   358
+add            5   360   236   359
+route          2   361    92    92       0.000
+          000000092.rte000000092.swq
+recmon         7   362    63            0
+          92p.dat
+add            5   363   361   362
+add            5   364    29   363
+route          2   365    29   364       0.000
+          000000029.rte000000029.swq
+recmon         7   366    64            0
+          29p.dat
+add            5   367   365   366
+add            5   368    28   367
+route          2   369    28   368       0.000
+          000000028.rte000000028.swq
+recmon         7   370    65            0
+          28p.dat
+add            5   371   369   370
+add            5   372   332   371
+route          2   373    32   372       0.000
+          000000032.rte000000032.swq
+recmon         7   374    66            0
+          32p.dat
+add            5   375   373   374
+add            5   376   352   375
+route          2   377    39   376       0.000
+          000000039.rte000000039.swq
+recmon         7   378    67            0
+          39p.dat
+add            5   379   377   378
+add            5   380   232   379
+route          2   381    42   380       0.000
+          000000042.rte000000042.swq
+recmon         7   382    68            0
+          42p.dat
+add            5   383   381   382
+add            5   384   360   383
+route          2   385    40   384       0.000
+          000000040.rte000000040.swq
+recmon         7   386    69            0
+          40p.dat
+add            5   387   385   386
+add            5   388   212   387
+route          2   389    52   388       0.000
+          000000052.rte000000052.swq
+recmon         7   390    70            0
+          52p.dat
+add            5   391   389   390
+add            5   392   248   391
+route          2   393   112   392       0.000
+          000000112.rte000000112.swq
+recmon         7   394    71            0
+          112p.dat
+add            5   395   393   394
+add            5   396    53   395
+route          2   397    53   396       0.000
+          000000053.rte000000053.swq
+recmon         7   398    72            0
+          53p.dat
+add            5   399   397   398
+add            5   400    59   399
+route          2   401    93    93       0.000
+          000000093.rte000000093.swq
+recmon         7   402    73            0
+          93p.dat
+add            5   403   401   402
+add            5   404    94   403
+route          2   405    94   404       0.000
+          000000094.rte000000094.swq
+recmon         7   406    74            0
+          94p.dat
+add            5   407   405   406
+add            5   408    47   407
+route          2   409    47   408       0.000
+          000000047.rte000000047.swq
+recmon         7   410    75            0
+          47p.dat
+add            5   411   409   410
+add            5   412   244   411
+route          2   413    54   412       0.000
+          000000054.rte000000054.swq
+recmon         7   414    76            0
+          54p.dat
+add            5   415   413   414
+add            5   416   400   415
+route          2   417    95    95       0.000
+          000000095.rte000000095.swq
+recmon         7   418    77            0
+          95p.dat
+add            5   419   417   418
+add            5   420    45   419
+route          2   421    45   420       0.000
+          000000045.rte000000045.swq
+recmon         7   422    78            0
+          45p.dat
+add            5   423   421   422
+add            5   424   240   423
+route          2   425    96   424       0.000
+          000000096.rte000000096.swq
+recmon         7   426    79            0
+          96p.dat
+add            5   427   425   426
+add            5   428    99   427
+route          2   429    99   428       0.000
+          000000099.rte000000099.swq
+recmon         7   430    80            0
+          99p.dat
+add            5   431   429   430
+add            5   432    61   431
+route          2   433    61   432       0.000
+          000000061.rte000000061.swq
+recmon         7   434    81            0
+          61p.dat
+add            5   435   433   434
+add            5   436   101   435
+route          2   437    97    97       0.000
+          000000097.rte000000097.swq
+recmon         7   438    82            0
+          97p.dat
+add            5   439   437   438
+add            5   440    98   439
+route          2   441    98   440       0.000
+          000000098.rte000000098.swq
+recmon         7   442    83            0
+          98p.dat
+add            5   443   441   442
+add            5   444    70   443
+route          2   445    70   444       0.000
+          000000070.rte000000070.swq
+recmon         7   446    84            0
+          70p.dat
+add            5   447   445   446
+add            5   448   276   447
+route          2   449    74   448       0.000
+          000000074.rte000000074.swq
+recmon         7   450    85            0
+          74p.dat
+add            5   451   449   450
+add            5   452   292   451
+route          2   453   106   452       0.000
+          000000106.rte000000106.swq
+recmon         7   454    86            0
+          106p.dat
+add            5   455   453   454
+add            5   456    76   455
+route          2   457    76   456       0.000
+          000000076.rte000000076.swq
+recmon         7   458    87            0
+          76p.dat
+add            5   459   457   458
+add            5   460   107   459
+route          2   461   100   100       0.000
+          000000100.rte000000100.swq
+recmon         7   462    88            0
+          100p.dat
+add            5   463   461   462
+add            5   464    56   463
+route          2   465    56   464       0.000
+          000000056.rte000000056.swq
+recmon         7   466    89            0
+          56p.dat
+add            5   467   465   466
+add            5   468   252   467
+route          2   469    60   468       0.000
+          000000060.rte000000060.swq
+recmon         7   470    90            0
+          60p.dat
+add            5   471   469   470
+add            5   472   436   471
+route          2   473   101   472       0.000
+          000000101.rte000000101.swq
+recmon         7   474    91            0
+          101p.dat
+add            5   475   473   474
+add            5   476   268   475
+route          2   477   102   102       0.000
+          000000102.rte000000102.swq
+recmon         7   478    92            0
+          102p.dat
+add            5   479   477   478
+add            5   480    72   479
+route          2   481    72   480       0.000
+          000000072.rte000000072.swq
+recmon         7   482    93            0
+          72p.dat
+add            5   483   481   482
+add            5   484   476   483
+route          2   485    75   484       0.000
+          000000075.rte000000075.swq
+recmon         7   486    94            0
+          75p.dat
+add            5   487   485   486
+add            5   488   460   487
+route          2   489   107   488       0.000
+          000000107.rte000000107.swq
+recmon         7   490    95            0
+          107p.dat
+add            5   491   489   490
+add            5   492   296   491
+route          2   493    79   492       0.000
+          000000079.rte000000079.swq
+recmon         7   494    96            0
+          79p.dat
+add            5   495   493   494
+add            5   496   300   495
+route          2   497    82   496       0.000
+          000000082.rte000000082.swq
+recmon         7   498    97            0
+          82p.dat
+add            5   499   497   498
+add            5   500   108   499
+route          2   501   103   103       0.000
+          000000103.rte000000103.swq
+recmon         7   502    98            0
+          103p.dat
+add            5   503   501   502
+add            5   504    58   503
+route          2   505    58   504       0.000
+          000000058.rte000000058.swq
+recmon         7   506    99            0
+          58p.dat
+add            5   507   505   506
+add            5   508   105   507
+route          2   509   104   104       0.000
+          000000104.rte000000104.swq
+recmon         7   510   100            0
+          104p.dat
+add            5   511   509   510
+add            5   512    50   511
+route          2   513    50   512       0.000
+          000000050.rte000000050.swq
+recmon         7   514   101            0
+          50p.dat
+add            5   515   513   514
+add            5   516   228   515
+route          2   517    55   516       0.000
+          000000055.rte000000055.swq
+recmon         7   518   102            0
+          55p.dat
+add            5   519   517   518
+add            5   520   416   519
+route          2   521    59   520       0.000
+          000000059.rte000000059.swq
+recmon         7   522   103            0
+          59p.dat
+add            5   523   521   522
+add            5   524   508   523
+route          2   525   105   524       0.000
+          000000105.rte000000105.swq
+recmon         7   526   104            0
+          105p.dat
+add            5   527   525   526
+add            5   528    62   527
+route          2   529    62   528       0.000
+          000000062.rte000000062.swq
+recmon         7   530   105            0
+          62p.dat
+add            5   531   529   530
+add            5   532   256   531
+route          2   533   109   532       0.000
+          000000109.rte000000109.swq
+recmon         7   534   106            0
+          109p.dat
+add            5   535   533   534
+add            5   536    81   535
+route          2   537    81   536       0.000
+          000000081.rte000000081.swq
+recmon         7   538   107            0
+          81p.dat
+add            5   539   537   538
+add            5   540   500   539
+route          2   541   108   540       0.000
+          000000108.rte000000108.swq
+recmon         7   542   108            0
+          108p.dat
+add            5   543   541   542
+add            5   544    85   543
+route          2   545    85   544       0.000
+          000000085.rte000000085.swq
+recmon         7   546   109            0
+          85p.dat
+add            5   547   545   546
+add            5   548   304   547
+route          2   549   110   110       0.000
+          000000110.rte000000110.swq
+recmon         7   550   110            0
+          110p.dat
+add            5   551   549   550
+add            5   552    77   551
+route          2   553    77   552       0.000
+          000000077.rte000000077.swq
+recmon         7   554   111            0
+          77p.dat
+add            5   555   553   554
+add            5   556   548   555
+route          2   557   111   556       0.000
+          000000111.rte000000111.swq
+recmon         7   558   112            0
+          111p.dat
+add            5   559   557   558
+saveconc      14   559     1     0
+             watout.dat
+finish         0

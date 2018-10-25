@@ -1,0 +1,834 @@
+albedo.f:!!    ihru        |none          |HRU number
+albedo.f:      j = ihru
+alph.f:!!    ihru        |none        |HRU number
+alph.f:      j = ihru
+anfert.f:!!    ihru        |none          |HRU number
+anfert.f:      j = ihru
+apply.f:!!    ihru         |none             |HRU number
+apply.f:      j = ihru
+autoirr.f:!!    ihru           |none          |HRU number
+autoirr.f:      j = ihru
+bacteria.f:!!    ihru        |none          |HRU number
+bacteria.f:      j = ihru
+buffer.f:!!    ihru        |none          |HRU number
+buffer.f:      j = ihru
+burnop.f:      j = ihru
+canopyint.f:!!    ihru        |none          |HRU number
+canopyint.f:      j = ihru
+carbon_new.f:      j = ihru
+conapply.f:!!    ihru         |none             |HRU number
+conapply.f:      j = ihru
+confert.f:!!    ihru         |none          |HRU number
+confert.f:      j = ihru
+crackflow.f:!!    ihru        |none          |HRU number
+crackflow.f:      j = ihru
+crackvol.f:!!    ihru        |none          |HRU number
+crackvol.f:      j = ihru
+dailycn.f:!!    ihru        |none          |HRU number
+dailycn.f:      j = ihru
+decay.f:!!    ihru          |none          |HRU number
+decay.f:      j = ihru
+dormant.f:!!    ihru           |none          |HRU number
+dormant.f:      j = ihru
+eiusle.f:!!    ihru        |none        |HRU number
+eiusle.f:      j = ihru
+enrsb.f:!!    ihru        |none          |HRU number
+enrsb.f:      j = ihru
+etact.f:!!    ihru         |none          |HRU number
+etact.f:      j = ihru
+etpot.f:!!    ihru       |none           |HRU number
+etpot.f:      j = ihru
+fert.f:!!    ihru          |none          |HRU number
+fert.f:      j = ihru
+filter.f:!!    ihru        |none          |HRU number
+filter.f:      j = ihru
+filtw.f:!!    ihru        |none          |HRU number
+filtw.f:      j = ihru
+grass_wway.f:!!    ihru            |none          |HRU number
+grass_wway.f:      j = ihru
+grass_wway.f:		chflow_day = 1000. * surfq(j) * hru_km(ihru)
+grass_wway.f:		  sedin = sedyld(ihru) * hru_km(ihru) 
+grass_wway.f:	SF_depth=surfq(j)  * hru_km(ihru) * 1000000/SF_area
+graze.f:!!    ihru         |none          |HRU number
+graze.f:      j = ihru
+grow.f:!!    ihru        |none             |HRU number
+grow.f:      j = ihru
+gwmod.f:!!    ihru        |none          |HRU number
+gwmod.f:      j = ihru
+gw_no3.f:!!    ihru        |none          |HRU number
+gw_no3.f:      j = ihru
+gwnutr.f:!!    ihru        |none          |HRU number
+gwnutr.f:      j = ihru
+harvestop.f:!!    ihru        |none           |HRU number
+harvestop.f:      j = ihru
+harvgrainop.f:!!    ihru        |none           |HRU number
+harvgrainop.f:      j = ihru
+harvkillop.f:!!    ihru        |none           |HRU number
+harvkillop.f:      j = ihru
+hruday.f:!!    ihru          |none          |HRU number
+hruday.f:      j = ihru
+hrupond.f:!!    ihru        |none          |HRU number
+hrupond.f:      j = ihru
+impndaa.f:!!    ihru          |none          |HRU number
+impndday.f:!!    ihru          |none          |HRU number
+impndday.f:      j = ihru
+impndmon.f:!!    ihru          |none          |HRU number
+impndyr.f:!!    ihru          |none          |HRU number
+irrsub.f:!!    ihru           |none          |HRU number
+irrsub.f:      j = ihru
+killop.f:!!    ihru         |none          |HRU number
+killop.f:      j = ihru
+latsed.f:!!    ihru        |none          |HRU number
+latsed.f:      j = ihru
+layersplit.f:	nly = sol_nly(ihru)
+layersplit.f:!! changed all sol_zmx(ihru) in subroutine to dep_new 1/27/09 gsm 
+layersplit.f:          xx = Abs(dep_new - sol_z(j,ihru))
+layersplit.f:          yy = Abs(dep_new - sol_z(j+1,ihru))
+layersplit.f:            sol_z(j,ihru) = dep_new
+layersplit.f:          if (sol_z(j,ihru) > dep_new) then
+layersplit.f:            sol_nly(ihru) = sol_nly(ihru) + 1
+layersplit.f:              sol_z(n,ihru) = sol_z(n-1,ihru)
+layersplit.f:              sol_bd(n,ihru) = sol_bd(n-1,ihru)
+layersplit.f:              sol_awc(n,ihru) = sol_awc(n-1,ihru)
+layersplit.f:              sol_k(n,ihru) = sol_k(n-1,ihru)
+layersplit.f:              sol_cbn(n,ihru) = sol_cbn(n-1,ihru)
+layersplit.f:              sol_clay(n,ihru) = sol_clay(n-1,ihru)
+layersplit.f:              sol_ec(n,ihru) = sol_ec(n-1,ihru)
+layersplit.f:              sol_no3(n,ihru) = sol_no3(n-1,ihru)
+layersplit.f:              sol_orgn(n,ihru) = sol_orgn(n-1,ihru)
+layersplit.f:              sol_orgp(n,ihru) = sol_orgp(n-1,ihru)
+layersplit.f:              sol_solp(n,ihru) = sol_solp(n-1,ihru)
+layersplit.f:              sol_mc(n,ihru) = sol_mc(n-1,ihru)
+layersplit.f:              sol_mn(n,ihru) = sol_mn(n-1,ihru)
+layersplit.f:              sol_mp(n,ihru) = sol_mp(n-1,ihru)
+layersplit.f:			  sol_n(n,ihru) = sol_n(n-1,ihru)
+layersplit.f:            sol_z(j,ihru) = dep_new
+modparm.f:      integer :: icode, ihout, inum1, inum2, inum3, inum4, wndsim, ihru
+modparm.f:      integer :: lao, igropt, npmx, irtpest, curyr, tmpsim, icrk, iihru
+modparm.original.f:      integer :: icode, ihout, inum1, inum2, inum3, inum4, wndsim, ihru
+modparm.original.f:      integer :: lao, igropt, npmx, irtpest, curyr, tmpsim, icrk, iihru
+nfix.f:!!    ihru        |none          |HRU number
+nfix.f:      j = ihru
+nitvol.f:!!    ihru          |none          |HRU number
+nitvol.f:      j = ihru 
+nlch.f:!!    ihru        |none          |HRU number
+nlch.f:      j = ihru
+nminrl.f:!!    ihru          |none          |HRU number
+nminrl.f:      j = ihru
+npup.f:!!    ihru        |none           |HRU number
+npup.f:      j = ihru
+nrain.f:!!    ihru        |none          |HRU number
+nrain.f:      j = ihru
+nup.f:!!    ihru        |none           |HRU number
+nup.f:      j = ihru
+operatn.f:!!    ihru        |none          |HRU number
+operatn.f:      j = ihru
+orgncswat.f:!!    ihru          |none         |HRU number
+orgncswat.f:      j = ihru
+orgn.f:!!    ihru          |none         |HRU number
+orgn.f:      j = ihru
+percmacro.f:!!    ihru        |none          |HRU number
+percmacro.f:      j = ihru
+percmain.f:!!    ihru        |none          |HRU number
+percmain.f:      j = ihru
+percmicro.f:!!    ihru         |none          |HRU number
+percmicro.f:      j = ihru
+pestlch.f:!!    ihru         |none          |HRU number
+pestlch.f:      j = ihru
+pesty.f:!!    ihru          |none         |HRU number
+pesty.f:      j = ihru
+pkq.f:!!    ihru         |none          |HRU number
+pkq.f:      j = ihru
+plantmod.f:!!    ihru        |none          |HRU number
+plantmod.f:      j = ihru
+plantop.f:!!    ihru           |none          |HRU number
+plantop.f:      j = ihru
+pminrl.f:!!    ihru         |none          |HRU number
+pminrl.f:      j = ihru
+pothole.f:!!    ihru           |none          |HRU number
+pothole.f:      j = ihru
+pothole.f:       if (ipot(j) == ihru) then
+psed.f:!!    ihru          |none         |HRU number
+psed.f:      j = ihru
+readchm.f:!!    ihru        |none          |HRU number
+readchm.f:      read (106,5100,iostat=eof) (sol_no3(j,ihru), j = 1, mlyr)
+readchm.f:      read (106,5100,iostat=eof) (sol_orgn(j,ihru), j = 1, mlyr)
+readchm.f:      read (106,5100,iostat=eof) (sol_solp(j,ihru), j = 1, mlyr)
+readchm.f:      read (106,5100,iostat=eof) (sol_orgp(j,ihru), j = 1, mlyr)
+readchm.f:          hrupest(ihru) = 1
+readchm.f:          plt_pst(k,ihru) = pltpst
+readchm.f:          sol_pst(k,ihru,1) = solpst
+readchm.f:          pst_enr(k,ihru) = pstenr
+readgw.f:      read (110,*) shallst(ihru)
+readgw.f:      read (110,*) deepst(ihru)
+readgw.f:      read (110,*) delay(ihru)
+readgw.f:         delay(ihru) = gwdelay_pga(ihru)
+readgw.f:      read (110,*) alpha_bf(ihru)
+readgw.f:         alpha_bf(ihru) = alpha_bf_pga(ihru)
+readgw.f:      read (110,*) gwqmn(ihru)
+readgw.f:         gwqmn(ihru) = gwqmn_pga(ihru)
+readgw.f:      read (110,*) gw_revap(ihru)
+readgw.f:         gw_revap(ihru) = gw_revap_pga(ihru)
+readgw.f:      read (110,*) revapmn(ihru)
+readgw.f:         revapmn(ihru) = revapmn_pga(ihru)
+readgw.f:      read (110,*) rchrg_dp(ihru)
+readgw.f:         rchrg_dp(ihru) = rchrgdp_pga(ihru)
+readgw.f:      read (110,*,iostat=eof) gwht(ihru)
+readgw.f:      read (110,*,iostat=eof) gw_spyld(ihru)
+readgw.f:      read (110,*,iostat=eof) shallst_n(ihru)
+readgw.f:      read (110,*,iostat=eof) gwminp(ihru)
+readgw.f:!!     gw_revap(ihru) = 0.1
+readgw.f:      if (deepst(ihru) <= 0.) deepst(ihru) = 1000.
+readgw.f:        if (delay(ihru) < = 1.e-6) delay(ihru) = 1.
+readgw.f:      alpha_bfe(ihru) = Exp(-alpha_bf(ihru))
+readgw.f:      gw_delaye(ihru) = Exp(-1./(delay(ihru) + 1.e-6))
+readgw.f:      shallst_n(ihru) = shallst_n(ihru) * shallst(ihru) / 100.
+readgw.f:      gw_nloss(ihru) = Exp(-.693 / hlife_ngw)
+readgw.f:      ch_revap(i) = gw_revap(ihru)
+readgw.f:      alpha_bfe(ihru) = Exp(-alpha_bf(ihru))
+readgw.f:      gw_delaye(ihru) = Exp(-1./(delay(ihru) + 1.e-6))
+readgw.f:      shallst_n(ihru) = shallst_n(ihru) * shallst(ihru) / 100.
+readgw.f:      gw_nloss(ihru) = Exp(-.693 / hlife_ngw)
+readgw.f:      ch_revap(i) = gw_revap(ihru)
+readhru.f:!!    ihru        |none          |HRU number
+readhru.f:      read (108,*) hru_fr(ihru)
+readhru.f:      read (108,*) slsubbsn(ihru)
+readhru.f:         slsubbsn(ihru) = slsubbsn(ihru)*slsubbsn_pga(ihru)
+readhru.f:      read (108,*) hru_slp(ihru) 
+readhru.f:         hru_slp(ihru) = hru_slp(ihru)*hruslp_pga(ihru)
+readhru.f:      read (108,*) ov_n(ihru)
+readhru.f:         ov_n(ihru) = ov_n(ihru)*ovn_pga(ihru)
+readhru.f:      read (108,*) lat_ttime(ihru) 
+readhru.f:      read (108,*) lat_sed(ihru)   !read in in mg/L
+readhru.f:      read (108,*) slsoil(ihru)
+readhru.f:        slsoil(ihru) = slsoil_pga(ihru) 
+readhru.f:      read (108,*,iostat=eof) canmx(ihru) 
+readhru.f:        canmx(ihru) = canmx_pga(ihru)        
+readhru.f:         escohru = esco_pga(ihru)
+readhru.f:         epcohru = epco_pga(ihru)
+readhru.f:      read (108,*,iostat=eof) rsdin(ihru) 
+readhru.f:      read (108,*,iostat=eof) erorgn(ihru) 
+readhru.f:      read (108,*,iostat=eof) erorgp(ihru) 
+readhru.f:      read (108,*,iostat=eof) pot_fr(ihru) 
+readhru.f:      read (108,*,iostat=eof) fld_fr(ihru) 
+readhru.f:      read (108,*,iostat=eof) rip_fr(ihru) 
+readhru.f:      if (ipot(ihru) == ihru) then
+readhru.f:        read (108,*,iostat=eof) pot_tile(ihru)
+readhru.f:        read (108,*,iostat=eof) pot_volx(ihru) 
+readhru.f:        read (108,*,iostat=eof) pot_vol(ihru) 
+readhru.f:        read (108,*,iostat=eof) pot_nsed(ihru) 
+readhru.f:        read (108,*,iostat=eof) pot_no3l(ihru)
+readhru.f:      read (108,*,iostat=eof) dep_imp(ihru)
+readhru.f:      read (108,*,iostat=eof) evpot(ihru)
+readhru.f:      read (108,*,iostat=eof) dis_stream(ihru)
+readhru.f:      if (escohru > 1.e-4) esco(ihru) = escohru
+readhru.f:      if (epcohru > 1.e-4) epco(ihru) = epcohru
+readhru.f:      if (dep_imp(ihru) <=0.) dep_imp(ihru) = depimp_bsn
+readhru.f:!     if (ddrain(ihru) <= 0.) ddrain(ihru) = 1000.
+readhru.f:!     if (tdrain(ihru) <= 0.) tdrain(ihru) = 24.
+readhru.f:!     if (gdrain(ihru) <= 0.) gdrain(ihru) = 96.
+readhru.f:      if (hru_fr(ihru) <= 0.) hru_fr(ihru) = .0000001
+readhru.f:      if (slsubbsn(ihru) <= 0.) slsubbsn(ihru) = 50.0
+readhru.f:      if (hru_slp(ihru) <= 0.0001) hru_slp(ihru) = .0001
+readhru.f:      if (hru_slp(ihru) >= 1.0) hru_slp(ihru) = 1.0
+readhru.f:      if (slsoil(ihru) <= 0.)  slsoil(ihru) = slsubbsn(ihru)
+readhru.f:      if (esco(ihru) <= 0.) esco(ihru) = .95
+readhru.f:!     if (dep_imp(ihru) <= 0.) dep_imp(ihru) = 6000.
+readhru.f:!     esco(ihru) = 1. - esco(ihru)
+readhru.f:      if (epco(ihru) <= 0. .or. epco(ihru) > 1.) epco(ihru) = 1.0
+readhru.f:      if (evpot(ihru) <= 0.) evpot(ihru) = 0.5
+readhru.f:      if (dis_stream(ihru) <= 0.) dis_stream(ihru) = 35.0
+readhru.f:      xm = .6 * (1. - Exp(-35.835 * hru_slp(ihru)))
+readhru.f:      sin_sl = Sin(Atan(hru_slp(ihru)))
+readhru.f:      usle_ls(ihru) = (slsubbsn(ihru)/22.128)**xm * (65.41 * sin_sl *   &
+readhru.f:      hru_km(ihru) = sub_km(i) * hru_fr(ihru)
+readhru.f:      hru_ha(ihru) = hru_km(ihru) * 100.
+readhru.f:      lat_sed(ihru) = lat_sed(ihru) * 1.e-3     !!mg/L => g/L
+readhru.f:      pot_vol(ihru) = 10. * pot_vol(ihru) * hru_ha(ihru)     !! mm => m^3
+readhru.f:      pot_volx(ihru) = 10. * pot_volx(ihru) * hru_ha(ihru)   !! mm => m^3
+readhru.f:      pot_tile(ihru) = 10. * pot_tile(ihru) * hru_ha(ihru)   !! mm => m^3
+readhru.f:	pot_sed(ihru) = pot_nsed(ihru)
+readhru.f:	pot_san(ihru) = pot_nsed(ihru) * 0. 
+readhru.f:	pot_sil(ihru) = pot_nsed(ihru) * 1. 
+readhru.f:	pot_cla(ihru) = pot_nsed(ihru) * 0. 
+readhru.f:	pot_sag(ihru) = pot_nsed(ihru) * 0. 
+readhru.f:	pot_lag(ihru) = pot_nsed(ihru) * 0. 
+readmgt.f:!!    ihru       |none             |HRU number
+readmgt.f:      read (109,*) nmgt(ihru)
+readmgt.f:      read (109,*) igro(ihru)
+readmgt.f:      read (109,*) laiday(ihru)
+readmgt.f:      read (109,*) bio_ms(ihru)
+readmgt.f:      read (109,*) phu_plt(1,1,ihru)
+readmgt.f:         phu_plt(1,1,ihru) = phu_pga(ihru)
+readmgt.f:!     read (109,*) curyr_mat(ihru)
+readmgt.f:      read (109,*) biomix(ihru)
+readmgt.f:      read (109,*) cn2(ihru)
+readmgt.f:      read (109,*) usle_p(ihru)
+readmgt.f:      read (109,*) bio_min(ihru)
+readmgt.f:      read (109,*) filterw(ihru)
+readmgt.f:      read (109,*) iurban(ihru)
+readmgt.f:      read (109,*) urblu(ihru)
+readmgt.f:      read (109,*) irrsc(ihru)
+readmgt.f:      read (109,*) irrno(ihru)
+readmgt.f:      read (109,*) flowmin(ihru)
+readmgt.f:      read (109,*) divmax(ihru)
+readmgt.f:      read (109,*) flowfr(ihru)
+readmgt.f:      read (109,*) ddrain(ihru)
+readmgt.f:      read (109,*) tdrain(ihru)
+readmgt.f:      read (109,*) gdrain(ihru)
+readmgt.f:      read (109,*) nrot(ihru)
+readmgt.f:      if (ipot(ihru) == ihru) then
+readmgt.f:        do irot = 1, nrot(ihru)
+readmgt.f:          imp_trig(irot,1,ihru) = 0
+readmgt.f:      if (cn2(ihru) <= 35.0) cn2(ihru) = 35.0
+readmgt.f:      if (cn2(ihru) >= 98.0) cn2(ihru) = 98.0
+readmgt.f:      if (usle_p(ihru) <= 0.0) usle_p(ihru) = 0.0
+readmgt.f:      if (usle_p(ihru) >= 1.0) usle_p(ihru) = 1.0
+readmgt.f:      if (biomix(ihru) <= 0.) biomix(ihru) = .2
+readmgt.f:      if (iurban(ihru) == 2 .and. urblu(ihru) <= 0) urblu(ihru) = 1
+readmgt.f:      if (irrsc(ihru) <= 0) irrsc(ihru) = 5
+readmgt.f:      if (irrno(ihru) <= 0) irrno(ihru) = ihru
+readmgt.f:      if (flowfr(ihru) <= 0.) flowfr(ihru) = 1.0
+readmgt.f:      if (ddrain(ihru) > .001) then 
+readmgt.f:        if (tdrain(ihru) <= .001) tdrain(ihru) = 24.
+readmgt.f:        if (gdrain(ihru) <= .001) gdrain(ihru) = 96.
+readmgt.f:      if (igro(ihru) == 1) then
+readmgt.f:        idplt(1,1,ihru) = ncrp
+readmgt.f:        idplt(1,2,ihru) = ncrp
+readmgt.f:        phuacc(ihru) = .1
+readmgt.f:          tnylda(1,1,ihru) = 350. * cnyld(ncrp) * bio_e(ncrp)
+readmgt.f:          tnylda(1,1,ihru) = 1000. * cnyld(ncrp) * bio_e(ncrp)
+readmgt.f:      if (iurban(ihru) > 0) then
+readmgt.f:        disc = fimp(urblu(ihru)) - fcimp(urblu(ihru))
+readmgt.f:        if (fimp(urblu(ihru)) < 0.30) then
+readmgt.f:          cn2(ihru) = cn2(ihru) + fimp(urblu(ihru)) *                   &
+readmgt.f:     &                      (urbcn2(urblu(ihru)) - cn2(ihru)) *         &
+readmgt.f:     &                               (1. - disc/(2.* fimp(urblu(ihru))))
+readmgt.f:          cn2(ihru) = cn2(ihru) + fimp(urblu(ihru)) *                   &
+readmgt.f:     &                                 (urbcn2(urblu(ihru)) - cn2(ihru))
+readmgt.f:      if (filterw(ihru) > 0.) then
+readmgt.f:        fsred(ihru) = 1. - ((12. + 4.5 * filterw(ihru)) / 100.)
+readmgt.f:        trapeff(ihru) = 0.367 * filterw(ihru)**0.2967
+readmgt.f:        fsred(ihru) = 1.
+readmgt.f:        trapeff(ihru) = 0.
+readmgt.f:      fsred(ihru) = Min(fsred(ihru), 1.)
+readmgt.f:      fsred(ihru) = Max(fsred(ihru), 0.)
+readmgt.f:      trapeff(ihru) = Min(trapeff(ihru), 1.)
+readmgt.f:      trapeff(ihru) = Max(trapeff(ihru), 0.)
+readmgt.f:      if (nrot(ihru) > 0) then
+readmgt.f:        do iro = 1, nrot(ihru)                  !! rotation loop
+readmgt.f:            idplt(iro+1,1,ihru) = lcr
+readmgt.f:            if (idplt(iro,1,ihru) == 0) idplt(iro,1,ihru) = lcr
+readmgt.f:            if (phu_plt(iro,1,ihru) == 0.)                              &
+readmgt.f:     &                         phu_plt(iro,1,ihru) = phu_plt(iro,2,ihru)
+readmgt.f:            if (igro(ihru) == 1) idplt(1,1,ihru) = mgt1i
+readmgt.f:            idplt(iro,npl,ihru) = mgt1i
+readmgt.f:            idplt(iro,npl+1,ihru) = mgt1i
+readmgt.f:            iplant(iro,npl,ihru) = Jdt(ndays,day,mon)
+readmgt.f:            phu_plt(iro,npl,ihru) = mgt4
+readmgt.f:            phu_plt(iro,npl+1,ihru) = mgt4
+readmgt.f:              phup(iro,npl,ihru) = husc
+readmgt.f:              if (husc > .5) phup(iro,npl+1,ihru) = husc
+readmgt.f:            cnop(iro,icnp,ihru) = mgt9
+readmgt.f:            curyr_mat(ihru) = mgt3i
+readmgt.f:            hi_targ(iro,npl,ihru) = mgt7
+readmgt.f:            bio_targ(iro,npl,ihru) = mgt8 * 1000.
+readmgt.f:            lai_init(iro,npl,ihru) = mgt5
+readmgt.f:            bio_init(iro,npl,ihru) = mgt6
+readmgt.f:              tnylda(iro,npl,ihru) = 350. * cnyld(mgt1i) * bio_e(mgt1i)
+readmgt.f:              tnylda(iro,npl,ihru) = 1000. * cnyld(mgt1i) * bio_e(mgt1i)
+readmgt.f:            kirr(ihru) = "x"
+readmgt.f:            irr_amt(iro,nir,ihru) = mgt4
+readmgt.f:            iir(iro,nir,ihru) = Jdt(ndays,day,mon)
+readmgt.f:            if (husc > 0.) phuirr(iro,nir,ihru) = husc
+readmgt.f:            irr_salt(iro,nir,ihru) = mgt5
+readmgt.f:            irr_efm(iro,nir,ihru) = mgt6
+readmgt.f:            irr_sq(iro,nir,ihru) = mgt7
+readmgt.f:            if (irr_efm(iro,nir,ihru) < 1.e-6)irr_efm(iro,nir,ihru) =1.0
+readmgt.f:              ifert(iro,ifn,ihru) = Jdt(ndays,day,mon)
+readmgt.f:                  phun(iro,ifn,ihru) = husc
+readmgt.f:                  phun_nocrop(iro,ifn,ihru) = husc
+readmgt.f:              frt_surface(iro,ifn,ihru) = mgt5
+readmgt.f:              if (frt_surface(iro,ifn,ihru) <= 1.e-6)                   &
+readmgt.f:     &                                    frt_surface(iro,ifn,ihru) = .2
+readmgt.f:              ifrttyp(iro,ifn,ihru) = mgt1i
+readmgt.f:              frt_kg(iro,ifn,ihru) = mgt4
+readmgt.f:            hrupest(ihru) = 1
+readmgt.f:            ipst(iro,npst,ihru) = Jdt(ndays,day,mon)
+readmgt.f:                phupst(iro,npst,ihru) = husc
+readmgt.f:                phupst_nocrop(iro,npst,ihru) = husc
+readmgt.f:            pst_kg(iro,npst,ihru) = mgt4
+readmgt.f:            ipest(iro,npst,ihru) = mgt1i
+readmgt.f:            pst_dep(iro,npst,ihru) = mgt5
+readmgt.f:            ihv(iro,npl,ihru) = Jdt(ndays,day,mon)
+readmgt.f:              if (ihv(iro,nhv-1,ihru) <= 0) then
+readmgt.f:                ihv(iro,nhv-1,ihru) = ihv(iro,nhv,ihru)
+readmgt.f:              phuh(iro,npl,ihru) = husc
+readmgt.f:              phuh(iro,npl+1,ihru) = husc
+readmgt.f:            cnop(iro,icnp,ihru) = mgt4
+readmgt.f:            iop(iro,inop,ihru) = Jdt(ndays,day,mon)
+readmgt.f:                phut(iro,inop,ihru) = husc
+readmgt.f:                phut_nocrop(iro,inop,ihru) = husc
+readmgt.f:            idtill(iro,inop,ihru) = mgt1i
+readmgt.f:            cnop(iro,icnp,ihru) = mgt4
+readmgt.f:            ihvo(iro,nhvo,ihru) = Jdt(ndays,day,mon)
+readmgt.f:            if (husc > 0.) phuho(iro,nhvo,ihru) = husc
+readmgt.f:            ihv_gbm(iro,nhvo,ihru) = mgt2i
+readmgt.f:            hi_ovr(iro,nhvo,ihru) = mgt5
+readmgt.f:            harveff(iro,nhvo,ihru) = mgt4
+readmgt.f:            if (harveff(iro,nhvo,ihru) <= 0.) then
+readmgt.f:              harveff(iro,nhvo,ihru) = 1.
+readmgt.f:            ikill(iro,npl,ihru) = Jdt(ndays,day,mon)
+readmgt.f:            if (husc > 0.) phuk(iro,npl,ihru) = husc
+readmgt.f:!           idplt(iro,npl+1,ihru) = lcr
+readmgt.f:            igraz(iro,igr,ihru) = Jdt(ndays,day,mon)
+readmgt.f:            if (husc > 0.) phug(iro,igr,ihru) = husc
+readmgt.f:            if (bio_min(ihru) <= 1.e-4) bio_min(ihru) = 3000.
+readmgt.f:            bio_eat(iro,igr,ihru) = mgt4
+readmgt.f:            grz_days(iro,igr,ihru) = mgt1i
+readmgt.f:            bio_trmp(iro,igr,ihru) = mgt5
+readmgt.f:            manure_kg(iro,igr,ihru) = mgt6
+readmgt.f:            if (manure_kg(iro,igr,ihru) <= 0.) then
+readmgt.f:              manure_kg(iro,igr,ihru) = .95 * mgt4
+readmgt.f:      !!     manure_id(iro,igr,ihru) = 1
+readmgt.f:             manure_id(iro,igr,ihru) = mgt2i
+readmgt.f:            iairr(iro,nairr-1,ihru) = Jdt(ndays,day,mon)
+readmgt.f:            if (husc > 0.) phuai(iro,nairr-1,ihru) = husc
+readmgt.f:            wstrs_id(iro,nairr,ihru) = mgt1i
+readmgt.f:            auto_wstr(iro,nairr,ihru) = mgt4
+readmgt.f:            irr_eff(iro,nairr,ihru) = mgt5					     !! BN: inserted to account for irr.efficiency
+readmgt.f:            irr_asq(iro,nairr,ihru) = mgt7
+readmgt.f:            irr_mx(iro,nairr,ihru) = mgt6
+readmgt.f:            if (irr_eff(iro,nairr,ihru) > 1.)                           &    !! BN: inserted (see below)
+readmgt.f:     &              irr_eff(iro,nairr,ihru) = 1.				     !! BN: inserted: irr.efficiency cannot be > 1
+readmgt.f:            if (irr_eff(iro,nairr,ihru) == 0.)                          &    !! BN: inserted (see below)
+readmgt.f:     &              irr_eff(iro,nairr,ihru) = 1.                             !! BN: inserted: irr.efficiency cannot be 0
+readmgt.f:            if (irr_mx(iro,nairr,ihru) < 1.e-6)                         & 
+readmgt.f:     &		   irr_mx (iro,nairr,ihru) = 25.4
+readmgt.f:            kirr(ihru) = "x"
+readmgt.f:              iafer(iro,nafer,ihru) = Jdt(ndays,day,mon)
+readmgt.f:              if (husc > 0.) phuaf(iro,nafer,ihru) = husc
+readmgt.f:              afrt_surface(ihru) = mgt8
+readmgt.f:              if (afrt_surface(ihru) <= 1.e-6) afrt_surface(ihru) = .2
+readmgt.f:              auto_nstrs(ihru) = mgt4
+readmgt.f:              iafrttyp(ihru) = mgt1i
+readmgt.f:              auto_napp(ihru) = mgt5
+readmgt.f:              if (auto_napp(ihru) <= 0.) auto_napp(ihru) = 200.
+readmgt.f:              auto_nyr(ihru) = mgt6
+readmgt.f:              if (auto_nyr(ihru) <= 0.) auto_nyr(ihru) = 300.
+readmgt.f:              auto_eff(ihru) = mgt7
+readmgt.f:              if (auto_eff(ihru) <= 0.) auto_eff(ihru) = 1.3
+readmgt.f:            isweep(iro,nsw,ihru) = Jdt(ndays,day,mon)
+readmgt.f:                phusw(iro,nsw,ihru) = husc
+readmgt.f:                phusw_nocrop(iro,nsw,ihru) = husc
+readmgt.f:            sweepeff(iro,nsw,ihru) = mgt4
+readmgt.f:            fr_curb(iro,nsw,ihru) = mgt5
+readmgt.f:            if (fr_curb(iro,nsw,ihru) <= 0.) fr_curb(iro,nsw,ihru) = 1.0
+readmgt.f:            imp_trig(iro,nrel+1,ihru) = mgt1i
+readmgt.f:            irelease(iro,nrel,ihru) = Jdt(ndays,day,mon)
+readmgt.f:                phuimp(iro,nrel,ihru) = husc
+readmgt.f:                phuimp_nocrop(iro,nrel,ihru) = husc
+readmgt.f:            icfert(iro,icf,ihru) = Jdt(ndays,day,mon)
+readmgt.f:            if (husc > 0.) phucf(iro,icf,ihru) = husc
+readmgt.f:            fert_days(iro,icf,ihru) = mgt1i
+readmgt.f:            cfrt_kg(iro,icf,ihru) = mgt4
+readmgt.f:            cfrt_id(iro,icf,ihru) = mgt2i
+readmgt.f:            ifrt_freq(iro,icf,ihru) = mgt3i
+readmgt.f:            if (ifrt_freq(iro,icf,ihru) <= 0) then
+readmgt.f:              ifrt_freq(iro,icf,ihru) = 1
+readmgt.f:            icpest(iro,icp,ihru) = Jdt(ndays,day,mon)
+readmgt.f:            if (husc > 0.) phucp(iro,icp,ihru) = husc
+readmgt.f:            pest_days(iro,icp,ihru) = mgt2i
+readmgt.f:            cpst_kg(iro,icp,ihru) = mgt4
+readmgt.f:            cpst_id(iro,icp,ihru) = mgt1i
+readmgt.f:            ipst_freq(iro,icp,ihru) = mgt3i
+readmgt.f:            if (ipst_freq(iro,icp,ihru) <= 0) then
+readmgt.f:              ipst_freq(iro,icp,ihru) = 1
+readmgt.f:            iburn(iro,ibrn,ihru) = Jdt(ndays,day,mon)
+readmgt.f:            if (husc > 0.) phub(iro,ibrn,ihru) = husc
+readmgt.f:            burn_frlb(iro,ibrn,ihru) = mgt4
+readmgt.f:        if (iro == nrot(ihru)) exit
+readmgt.f:        idplt(1,1,ihru) = lcr
+readmgt.f:        do irotate = 2, nrot(ihru)
+readmgt.f:         if (idplt(irotate,1,ihru) == 0) idplt(irotate,1,ihru) =        &
+readmgt.f:     &     idplt(irotate-1,1,ihru)
+readmgt.f:         if (tnylda(irotate,2,ihru) == 0) tnylda(irotate,2,ihru) =      &
+readmgt.f:     &     tnylda(irotate-1,2,ihru)
+readmgt.f:         if (tnylda(irotate,1,ihru) == 0) tnylda(irotate,1,ihru) =      &
+readmgt.f:     &     tnylda(irotate,2,ihru)
+readops.f:          iopday(iops,ihru) = Jdt (ndays,day,mon)
+readops.f:          iopyr(iops,ihru) = iyear                  
+readops.f:          mgt_ops(iops,ihru) = mgt_op                
+readops.f:             terr_p(iops,ihru) = mgt4
+readops.f:             terr_cn(iops,ihru) = mgt5
+readops.f:             terr_sl(iops,ihru) = mgt6
+readops.f:             drain_d(iops,ihru) = mgt4
+readops.f:             drain_t(iops,ihru) = mgt5
+readops.f:             drain_g(iops,ihru) = mgt6
+readops.f:             drain_idep(iops,ihru) = mgt7
+readops.f:             cont_cn(iops,ihru) = mgt4
+readops.f:             cont_p(iops,ihru) =  mgt5
+readops.f:		     filter_i(iops,ihru) = mgt1i  !! on off flag
+readops.f:		     filter_ratio(iops,ihru) = mgt3
+readops.f:		     filter_con(iops,ihru) = mgt4
+readops.f:		     filter_ch(iops,ihru) = mgt5                  
+readops.f:             strip_n(iops,ihru) = mgt4
+readops.f:             strip_cn(iops,ihru) = mgt5
+readops.f:             strip_c(iops,ihru) = mgt6
+readops.f:             strip_p(iops,ihru) = mgt7
+readops.f:             fire_cn(iops,ihru) = mgt4
+readops.f:             gwati(iops,ihru) = mgt1i 
+readops.f:             gwatn(iops,ihru) = mgt3
+readops.f:             gwatspcon(iops,ihru) = mgt4             
+readops.f:             gwatd(iops,ihru) = mgt5
+readops.f:             gwatw(iops,ihru) = mgt6
+readops.f:             gwatl(iops,ihru) = mgt7	
+readops.f:             gwats(iops,ihru) = mgt8
+readops.f:	if (gwatn(iops,ihru) <=0.) gwatn(iops,ihru) = 0.35 
+readops.f:	if (gwatl(iops,ihru) <=0.) gwatl(iops,ihru) = hru_km(ihru)**.5
+readops.f:	if (gwatd(iops,ihru) <= 0.) then
+readops.f:		gwatd(iops,ihru) = 3 / 64 * gwatw(iops,ihru)
+readops.f:	if (gwats(iops,ihru) <=0.) gwats(iops,ihru) = hru_slp(ihru)*.75
+readops.f:	if (gwatspcon(iops,ihru)<= 0.) gwatspcon(iops,ihru) = 0.005
+readops.f:             cropno_upd(iops,ihru) = mgt1i
+readops.f:             hi_upd(iops,ihru) = mgt4
+readops.f:             laimx_upd(iops,ihru) = mgt5
+readpnd.f:!!    ihru        |none          |HRU number
+readpnd.f:        ihru = 0
+readpnd.f:        ihru = nhru + j
+readpnd.f:        pnd_fr(ihru) = spndfr
+readpnd.f:        pnd_psa(ihru) = spndpsa
+readpnd.f:        pnd_pvol(ihru) = spndpv
+readpnd.f:        pnd_esa(ihru) = spndesa
+readpnd.f:        pnd_evol(ihru) = spndev
+readpnd.f:        pnd_vol(ihru) = spndv
+readpnd.f:        pnd_sed(ihru) = spnds
+readpnd.f:        pnd_nsed(ihru) = spndns
+readpnd.f:        pnd_k(ihru) = spndk
+readpnd.f:        iflod1(ihru) = sifld1
+readpnd.f:        iflod2(ihru) = sifld2
+readpnd.f:        ndtarg(ihru) = sndt
+readpnd.f:        psetlp(1,ihru) = sp1
+readpnd.f:        psetlp(2,ihru) = sp2
+readpnd.f:        nsetlp(1,ihru) = sn1
+readpnd.f:        nsetlp(2,ihru) = sn2
+readpnd.f:        chlap(ihru) = schla
+readpnd.f:        seccip(ihru) = sseci
+readpnd.f:        pnd_no3(ihru) = spno3
+readpnd.f:        pnd_solp(ihru) = spsolp
+readpnd.f:        pnd_orgn(ihru) = sporgn
+readpnd.f:        pnd_orgp(ihru) = sporgp
+readpnd.f:        ipnd1(ihru) = spnd1
+readpnd.f:        ipnd2(ihru) = spnd2
+readpnd.f:        wet_fr(ihru) = swetfr
+readpnd.f:        wet_nsa(ihru) = swetnsa
+readpnd.f:        wet_nvol(ihru) = swetnv
+readpnd.f:        wet_mxsa(ihru) = swetmsa
+readpnd.f:        wet_mxvol(ihru) = swetmv
+readpnd.f:        wet_vol(ihru) = swetv
+readpnd.f:        wet_sed(ihru) = swets
+readpnd.f:        wet_nsed(ihru) = swetns
+readpnd.f:        wet_k(ihru) = swetk
+readpnd.f:        psetlw(1,ihru) = sw1
+readpnd.f:        psetlw(2,ihru) = sw2
+readpnd.f:        nsetlw(1,ihru) = snw1
+readpnd.f:        nsetlw(2,ihru) = snw2
+readpnd.f:        chlaw(ihru) = schlaw
+readpnd.f:        secciw(ihru) = sseciw
+readpnd.f:        wet_no3(ihru) = swno3
+readpnd.f:        wet_solp(ihru) = swsolp
+readpnd.f:        wet_orgn(ihru) = sworgn
+readpnd.f:        wet_orgp(ihru) = sworgp
+readpnd.f:        evpnd(ihru) = pndevcoeff
+readpnd.f:        evwet(ihru) = wetevcoeff
+readseptic.f:	read (172,*,iostat=eof) ipop_sep(ihru)
+readseptic.f:      read (172,*,iostat=eof) isep_typ(ihru)
+readseptic.f:      read (172,*,iostat=eof) bz_z(ihru)
+readseptic.f:      read (172,*,iostat=eof) bz_thk(ihru)
+readseptic.f:      read (172,*,iostat=eof) bz_area(ihru)
+readseptic.f:      read (172,*,iostat=eof) bio_bd(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_bod_dc(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_bod_conv(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_fc1(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_fc2(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_fecal(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_plq(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_mrt(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_rsp(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_slg1(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_slg2(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_nitr(ihru)
+readseptic.f:      read (172,*,iostat=eof) coeff_denitr(ihru)
+readseptic.f:      if (bz_z(ihru) <= 1.e-6) bz_z(ihru) = 600.
+readseptic.f:      if (bz_thk(ihru) <= 1.e-6) bz_thk(ihru) = 20.
+readseptic.f:      if (bz_area(ihru) <= 1.e-6) bz_area(ihru) = 10.
+readseptic.f:      if (bio_bd(ihru) <= 1.e-6) bio_bd(ihru) = 1000.
+readseptic.f:      if (coeff_bod_dc(ihru) <= 1.e-6) coeff_bod_dc(ihru) = 108.
+readseptic.f:      if (coeff_bod_conv(ihru) <= 1.e-6) coeff_bod_conv(ihru) = 0.42
+readseptic.f:      if (coeff_fc1(ihru) <= 1.e-6) coeff_fc1(ihru) = 30.0
+readseptic.f:      if (coeff_fc2(ihru) <= 1.e-6) coeff_fc2(ihru) = 0.7
+readseptic.f:      if (coeff_fecal(ihru) <= 1.e-6) coeff_fecal(ihru) = 15.0
+readseptic.f:      if (coeff_plq(ihru) <= 1.e-6) coeff_plq(ihru) = 0.10
+readseptic.f:      if (coeff_mrt(ihru) <= 1.e-6) coeff_mrt(ihru) = 0.29
+readseptic.f:      if (coeff_rsp(ihru) <= 1.e-6) coeff_rsp(ihru) = 0.18
+readseptic.f:      if (coeff_slg1(ihru) <= 1.e-6) coeff_slg1(ihru) = 4. * 10. **(-4)
+readseptic.f:      if (coeff_slg2(ihru) <= 1.e-6) coeff_slg2(ihru) = 1.5
+readseptic.f:      if (coeff_nitr(ihru) <= 1.e-6) coeff_nitr(ihru) = 1.0
+readseptic.f:      if (coeff_denitr(ihru) <= 1.e-6) coeff_denitr(ihru) = 0.05
+readseptic.f:      sptqs(ihru) = sptqs(isep_typ(ihru)) * ipop_sep(ihru)
+readsol.f:!!    ihru          |none          |HRU number
+readsol.f:      read (107,5100) snam(ihru)
+readsol.f:      read (107,5200) hydgrp(ihru)
+readsol.f:      read (107,5300) sol_zmx(ihru)
+readsol.f:      read (107,5400) anion_excl(ihru)
+readsol.f:      read (107,5600) sol_crk(ihru)
+readsol.f:        sol_crk(ihru) = solcrk_pga(ihru)
+readsol.f:      read (107,5000) (sol_z(j,ihru), j = 1, mlyr)
+readsol.f:!      sol_z(j,ihru) = sol_z(j,ihru) / 5.0
+readsol.f:        if (sol_z(j,ihru) <= 0.001) sol_nly(ihru) = j - 1
+readsol.f:        if (sol_z(j,ihru) <= 0.001) exit
+readsol.f:      if (sol_nly(ihru) == 0) sol_nly(ihru) = 10
+readsol.f:      nly = sol_nly(ihru)
+readsol.f:      read (107,5000) (sol_bd(j,ihru), j = 1, nly)
+readsol.f:      read (107,5000) (sol_awc(j,ihru), j = 1, nly)
+readsol.f:           sol_awc(j,ihru) = (sol_awc(j,ihru) * awhc_pga(ihru))
+readsol.f:      read (107,5000) (sol_k(j,ihru), j = 1, nly)
+readsol.f:         sol_k(j,ihru) = (sol_k(j,ihru) * solk_pga(ihru))
+readsol.f:      read (107,5000) (sol_cbn(j,ihru), j = 1, nly)
+readsol.f:      read (107,5000) (sol_clay(j,ihru), j = 1, nly)
+readsol.f:      read (107,5000) (sol_silt(j,ihru), j = 1, nly)
+readsol.f:      read (107,5000) (sol_sand(j,ihru), j = 1, nly)
+readsol.f:      read (107,5000) (sol_rock(j,ihru), j = 1, nly)
+readsol.f:      read (107,5000) sol_alb(ihru)
+readsol.f:      read (107,5000) usle_k(ihru)
+readsol.f:      read (107,5000,iostat=eof) (sol_ec(j,ihru), j = 1, nly)
+readsol.f:      if (sol_awc(j,ihru) <= .01) sol_awc(j,ihru) = .01
+readsol.f:      if (sol_awc(j,ihru) >= .80) sol_awc(j,ihru) = .80
+readsol.f:	sol_n(j,ihru) = sol_cbn(j,ihru) / 11.0
+readsol.f:      if (sol_z(1,ihru) > 10.1) then
+readsol.f:        sol_nly(ihru) = sol_nly(ihru) + 1
+readsol.f:          sol_z(j,ihru) = sol_z(j-1,ihru)
+readsol.f:          sol_bd(j,ihru) = sol_bd(j-1,ihru)
+readsol.f:          sol_awc(j,ihru) = sol_awc(j-1,ihru)
+readsol.f:          sol_k(j,ihru) = sol_k(j-1,ihru)
+readsol.f:          sol_cbn(j,ihru) = sol_cbn(j-1,ihru)
+readsol.f:                  sol_n(j,ihru) = sol_n(j-1,ihru)
+readsol.f:!                 sol_mc(j,ihru) = sol_mc(j-1,ihru)
+readsol.f:!                 sol_mn(j,ihru) = sol_mn(j-1,ihru)
+readsol.f:!                 sol_mp(j,ihru) = sol_mp(j-1,ihru)
+readsol.f:                  sol_rock(j,ihru) = sol_rock(j-1,ihru) !!! Armen 13 Jan 2008
+readsol.f:                  sol_clay(j,ihru) = sol_clay(j-1,ihru)
+readsol.f:                  sol_sand(j,ihru) = sol_sand(j-1,ihru) !!! Claire 2 Dec 2009
+readsol.f:                  sol_silt(j,ihru) = sol_silt(j-1,ihru) !!! Claire 2 Dec 2009
+readsol.f:          sol_ec(j,ihru) = sol_ec(j-1,ihru)
+readsol.f:          sol_no3(j,ihru) = sol_no3(j-1,ihru)
+readsol.f:          sol_orgn(j,ihru) = sol_orgn(j-1,ihru)
+readsol.f:          sol_orgp(j,ihru) = sol_orgp(j-1,ihru)
+readsol.f:          sol_solp(j,ihru) = sol_solp(j-1,ihru)
+readsol.f:        sol_z(1,ihru) = 10.
+readsol.f:        call estimate_ksat(sol_clay(j,ihru),sol_k(j,ihru))  !!  NK June 28, 2006
+readsol.f:      if (sol_zmx(ihru) <= 0.001) sol_zmx(ihru) = sol_z(nly,ihru)
+readsol.f:      if (nrot(ihru) > 0) then
+readsol.f:        plt_zmx = 1000. * rdmx(idplt(1,1,ihru))
+readsol.f:      if (sol_zmx(ihru) > 1. .and. plt_zmx > 1.) then
+readsol.f:         sol_zmx(ihru) = Min(sol_zmx(ihru),plt_zmx)
+readsol.f:         sol_zmx(ihru) = Max(sol_zmx(ihru),plt_zmx)
+readsol.f:!!   reminder to put dep_new and i_sep(ihru) in modparm******
+readsol.f:      if (isep_typ(ihru) /= 0) then 
+readsol.f:       dep_new = sol_zmx(ihru)
+readsol.f:       dep_new = bz_z(ihru)
+readsol.f:         dep_new = bz_z(ihru) + bz_thk(ihru)
+readsol.f:         i_sep(ihru) = iseptic
+readsol.f:      if (sol_alb(ihru) < 0.1) sol_alb(ihru) = 0.1
+readsol.f:      if (anion_excl(ihru) <= 1.e-6) anion_excl(ihru) = anion_excl_bsn
+readsol.f:      if (anion_excl(ihru) >= 1.) anion_excl(ihru) = 0.99
+readsol.f:      if (rsdin(ihru) > 0.) sol_rsd(1,ihru) = rsdin(ihru)
+readsol.f:        if (sol_k(j,ihru) <= 0.0) then 
+readsol.f:          if (hydgrp(ihru) == "A") then
+readsol.f:            sol_k(j,ihru) = a
+readsol.f:          if (hydgrp(ihru) == "B") then
+readsol.f:            sol_k(j,ihru) = b
+readsol.f:          if (hydgrp(ihru) == "C") then
+readsol.f:            sol_k(j,ihru) = c
+readsol.f:          if (hydgrp(ihru) == "D") then
+readsol.f:!            sol_k(j,ihru) = c
+readsol.f:            sol_k(j,ihru) = d          !Claire 12/2/09
+readsol.f:           sol_k(j,ihru) = nota
+readsol.f:        if (sol_bd(j,ihru) <= 1.e-6) sol_bd(j,ihru) = 1.3
+readsol.f:        if (sol_bd(j,ihru) > 2.) sol_bd(j,ihru) = 2.0
+readsol.f:        if (sol_awc(j,ihru) <= 0.) sol_awc(j,ihru) = .005
+readsub.f:          ihru = 0
+readsub.f:          ihru = nhru + jj
+readsub.f:          if (jj == 1) hru1(i) = ihru
+readsub.f:          ipot(ihru) = ihru
+readsub.f:          ip = ihru
+readsub.f:          ihru = 0
+readsub.f:          ihru = nhru + jj
+readsub.f:          if (jj == 1) hru1(i) = ihru
+readsub.f:          ifld(ihru) = ihru
+readsub.f:          if = ihru
+readsub.f:          ihru = 0
+readsub.f:          ihru = nhru + jj
+readsub.f:          if (jj == 1) hru1(i) = ihru
+readsub.f:          irip(ihru) = ihru
+readsub.f:          ir = ihru
+readsub.f:          ihru = 0
+readsub.f:          ihru = nhru + j
+readsub.f:          if (j == 1) hru1(i) = ihru
+readsub.f:!         ipot(ihru) = ip
+readsub.f:!         ifld(ihru) = if
+readsub.f:!         irip(ihru) = ir
+readsub.f:           ihrup = nhru + k
+readsub.f:           ipot(ihrup) = ihru
+readsub.f:        ihru = 0
+readsub.f:        ihru = nhru + j
+readsub.f:        hru_sub(ihru) = i
+readsub.f:        hru_seq(ihru) = j
+readsub.f:        hrugis(ihru) = subgis(i)
+readsub.f:          snoeb(k,ihru) = ssnoeb(k)
+readsub.f:        sno_hru(ihru) = sno_sub
+readsub.f:        ch_l1(ihru) = ch_ls
+readsub.f:        driftco(ihru) = sdrift
+readwgn.f:        ihru = 0
+readwgn.f:        ihru = nhru + j
+readwgn.f:        do k = 1, sol_nly(ihru)
+readwgn.f:          sol_tmp(k,ihru) = tmpsoil
+readwgn.f:        ffc(ihru) = sffc
+readwgn.f:        dormhr(ihru) = dl
+readwus.f:        ihru = 0
+readwus.f:        ihru = nhru + j
+readwus.f:          wupnd(mon,ihru) = swupnd(mon)
+readwus.f:          wushal(mon,ihru) = swush(mon)
+readwus.f:          wudeep(mon,ihru) = swudp(mon)
+regres.f:!!    ihru         |none          |HRU number
+regres.f:      j = ihru
+rootfr.f:	real :: sol_thick(sol_nly(ihru))
+rootfr.f:	jj = ihru	
+sat_excess.f:!!    ihru        |none          |HRU number
+sat_excess.f:      j = ihru
+schedule_ops.f:!!    ihru        |none          |HRU number
+schedule_ops.f:	j = ihru
+schedule_ops.f:        iops = ioper(ihru)
+schedule_ops.f:        do while (iida == iopday(iops,ihru).and.iyr == iopyr(iops,ihru)) 
+schedule_ops.f:        select case(mgt_ops(iops,ihru))
+schedule_ops.f:         xm = 0.6 * (1. - Exp(-35.835 * hru_slp(ihru)))    
+schedule_ops.f:         sin_sl = Sin(Atan(hru_slp(ihru)))
+schedule_ops.f:         usle_ls(ihru) = (terr_sl(iops,ihru)/22.128) ** xm * (65.41 *   & 
+schedule_ops.f:         usle_mult(ihru) = sol_rock(1,ihru) * usle_k(ihru) *            &
+schedule_ops.f:     &   terr_p(iops,ihru) * usle_ls(ihru) * 11.8
+schedule_ops.f:        if (terr_cn(iops,ihru) > 1.e-6) then
+schedule_ops.f:           call curno(terr_cn(iops,ihru),ihru)
+schedule_ops.f:         ddrain(ihru) = drain_d(iops,ihru)
+schedule_ops.f:         gdrain(ihru) = drain_g(iops,ihru)
+schedule_ops.f:         tdrain(ihru) = drain_t(iops,ihru)
+schedule_ops.f:         dep_imp(ihru) = drain_idep(iops,ihru)
+schedule_ops.f:      if (ddrain(ihru) > 0) then
+schedule_ops.f:        do jj = 1, sol_nly(ihru)
+schedule_ops.f:          if (ddrain(ihru) < sol_z(jj,ihru)) ldrain(ihru) = jj
+schedule_ops.f:          if (ddrain(ihru) < sol_z(jj,ihru)) exit
+schedule_ops.f:        ldrain(ihru) = 0
+schedule_ops.f:         usle_mult(ihru) = usle_mult(ihru) * cont_p(iops,ihru) /        &
+schedule_ops.f:     &      usle_p(ihru)
+schedule_ops.f:         call curno(cont_cn(iops,ihru),ihru)
+schedule_ops.f:		vfsi(ihru) = filter_i(iops,ihru) !! on off flag
+schedule_ops.f:		vfsratio(ihru) = filter_ratio(iops,ihru)
+schedule_ops.f:		vfscon(ihru) = filter_con(iops,ihru)
+schedule_ops.f:		vfsch(ihru) = filter_ch(iops,ihru) 
+schedule_ops.f:		if (vfsratio(ihru) <= 0.) vfsratio(ihru) = 0.
+schedule_ops.f:		if (vfsratio(ihru) <= 0.) vfsratio(ihru) = 0.
+schedule_ops.f:		if (vfsratio(ihru) > 300) vfsratio(ihru) = 300
+schedule_ops.f:		if (vfscon(ihru) <= 0) vfscon(ihru) = 0.5
+schedule_ops.f:		if (vfscon(ihru) <= 0.1) vfscon(ihru) = 0.1
+schedule_ops.f:		if (vfscon(ihru) > 0.95) vfscon(ihru) = 0.95
+schedule_ops.f:		if (vfsch(ihru) <= 0.) vfsch(ihru) = 0.
+schedule_ops.f:		if (vfsch(ihru) > .95) vfsch(ihru) = .95
+schedule_ops.f:         call curno(strip_cn(iops,ihru),ihru)
+schedule_ops.f:         usle_mult(ihru) = usle_mult(ihru) * strip_p(iops,ihru) /       &
+schedule_ops.f:     &      usle_p(ihru)
+schedule_ops.f:         tover = .0556 * (slsubbsn(j) * strip_n(iops,ihru)) ** .6 /     &
+schedule_ops.f:         tconc(ihru) = tconc(ihru) + tover - t_ov(ihru)
+schedule_ops.f:!       ioper(ihru) = ioper(ihru) + 1
+schedule_ops.f:!       iops = ioper(ihru)
+schedule_ops.f:	   call curno (fire_cn(iops,ihru),ihru)
+schedule_ops.f:	if (ngrwat(ihru) < 0)  ngrwat(ihru) = 0
+schedule_ops.f:           ngrwat(ihru) = ngrwat(ihru) + 1
+schedule_ops.f:           grwat_n(ihru) = gwatn(iops,ihru)
+schedule_ops.f:           grwat_i(ihru) = gwati(iops,ihru)
+schedule_ops.f:           grwat_l(ihru) = gwatl(iops,ihru)
+schedule_ops.f:           grwat_w(ihru) = gwatw(iops,ihru)
+schedule_ops.f:           grwat_d(ihru) = gwatd(iops,ihru)
+schedule_ops.f:           grwat_s(ihru) = gwats(iops,ihru)
+schedule_ops.f:           grwat_spcon(ihru) = gwatspcon(iops,ihru)
+schedule_ops.f:           tch = .62 * grwat_l(ihru) * grwat_n(ihru) ** .6 / 
+schedule_ops.f:     *      (hru_km(ihru) ** .125 * grwat_s(ihru) ** .375)
+schedule_ops.f:           tc_gwat(ihru) = tch + t_ov(ihru)
+schedule_ops.f:		 k = mhru + ngrwat(ihru)
+schedule_ops.f:		b = grwat_w(ihru) - 2. * grwat_d(ihru) * 8
+schedule_ops.f:	    if (b <= 0.) grwat_d(ihru) = 3 / 64 * grwat_w(ihru)
+schedule_ops.f:           ch_n(2,msub+1) = grwat_n(ihru)
+schedule_ops.f:           ch_l2(msub+1) = grwat_l(ihru)
+schedule_ops.f:           ch_w(2,msub+1) = grwat_w(ihru)
+schedule_ops.f:           ch_d(msub+1) = grwat_d(ihru)
+schedule_ops.f:           ch_s(2,msub+1) = grwat_s(ihru)
+schedule_ops.f:             wat_phi(zz,ihru) = phi(zz,msub+1)
+schedule_ops.f:           plant_no = cropno_upd(iops,ihru)
+schedule_ops.f:           blai(plant_no) = laimx_upd(iops,ihru)
+schedule_ops.f:           hvsti(plant_no) = hi_upd(iops,ihru)
+schedule_ops.f:           ioper(ihru) = ioper(ihru) + 1
+schedule_ops.f:           iops = ioper(ihru)
+snom.f:!!    ihru         |none          |HRU number
+snom.f:      j = ihru
+solp.f:!!    ihru          |none         |HRU number
+solp.f:      j = ihru
+solt.f:!!    ihru        |none          |HRU number
+solt.f:      j = ihru
+subbasin.f:!!    ihru        |none          |HRU number
+subbasin.f:      ihru = 0
+subbasin.f:      ihru = hru1(inum1)
+subbasin.f:      do iihru = 1, hrutot(inum1)
+subbasin.f:      j = ihru
+subbasin.f:      ihru = ihru + 1
+subday.f:      sb = hru_sub(ihru)
+substor.f:!!    ihru          |none         |HRU number
+substor.f:      j = ihru
+subwq.f:!!    ihru        |none          |HRU number
+subwq.f:      j = ihru
+sumv.f:!!    ihru        |none          |HRU number
+sumv.f:      j = ihru
+surface.f:!!    ihru        |none          |HRU number
+surface.f:      j = ihru
+surfst_h2o.f:!!    ihru        |none          |HRU number
+surfst_h2o.f:      j = ihru
+surfstor.f:!!    ihru          |none         |HRU number
+surfstor.f:      j = ihru
+surq_daycn.f:!!    ihru        |none          |HRU number
+surq_daycn.f:      j = ihru
+surq_greenampt.f:!!    ihru        |none          |HRU number
+surq_greenampt.f:      j = ihru
+sweep.f:!!    ihru           |none          |HRU number
+sweep.f:      j = ihru
+swu.f:!!    ihru        |none          |HRU number
+swu.f:      j = ihru
+tran.f:!!    ihru        |none          |HRU number
+tran.f:      j = ihru
+tstr.f:!!    ihru        |none          |HRU number
+tstr.f:      j = ihru
+urban.f:!!    ihru         |none           |HRU number
+urban.f:      j = ihru
+varinit.f:!!    ihru        |none          |HRU number
+varinit.f:      j = ihru
+virtual.f:!!    ihru          |none          |HRU number
+virtual.f:      j = ihru
+virtual.f:      if (iihru == hrutot(sb)) then
+washp.f:!!    ihru          |none          |HRU number
+washp.f:      j = ihru
+watbal.f:!!    ihru        |none          |HRU number
+watbal.f:      j = ihru
+wattable.f:!!    ihru        |none          |HRU number
+wattable.f:      j = ihru
+watuse.f:!!    ihru        |none          |HRU number
+watuse.f:      j = ihru
+wetlan.f:!!    ihru        |none          |HRU number
+wetlan.f:      j = ihru
+ysed.f:!!    ihru        |none          |HRU number
+ysed.f:      j = ihru

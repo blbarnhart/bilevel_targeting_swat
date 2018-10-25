@@ -1,0 +1,73 @@
+
+
+Imported
+Written by i_SWAT
+2016-03-10 12:26:42
+
+       is.fig
+       2
+    2003
+       1
+     366
+* Line 12
+       0
+       1
+      30
+       0
+     1.3
+       1
+      11
+      11 
+1  * TMPSIM
+       1
+      11
+      11
+       2
+      11
+       2
+      11
+       2
+      11
+       0
+       0
+       0
+Precipitation Files:
+pcp1.pcp                                                        
+                                                                              
+                                                                              
+Temperature Files:
+tmp1.tmp                                                        
+                                                                              
+                                                                              
+
+
+
+
+
+       is.bsn
+
+   iscrop.dat
+   istill.dat
+   ispest.dat
+   isfert.dat
+  isurban.dat
+
+       0
+       0
+
+* Line 58
+       1
+       0
+       0
+       0
+       0
+* Line 64 IPDVAR
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+* Line 66  IPDVAB
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+* Line 68 *IPDVAS
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+*HRU data to be printed: 
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+* Line 72
+

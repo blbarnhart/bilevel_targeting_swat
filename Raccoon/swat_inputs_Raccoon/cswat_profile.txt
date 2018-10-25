@@ -1,0 +1,1 @@
+ year;day;hru;cmass;nmass;sol_rsd;sol_cdec;rdc;sol_no3;sol_orgp;sol_fop;sol_solp;mancmass;mannmass;manpmass
